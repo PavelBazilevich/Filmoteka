@@ -1,0 +1,47 @@
+.scrollToTopBtn {
+  opacity: 0;
+  cursor: pointer;
+  bottom: 230px;
+  right: 100px;
+  position: fixed;
+  z-index: 9;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+  right: 10px;
+  width: 90px;
+  height: 45px;
+
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    right: 70px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    bottom: 130px;
+  }
+}
+
+.showBtn {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+
+.upp-button {
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out 0s;
+  fill: var(--accent-color);
+
+  &:hover {
+    fill: rgb(255, 51, 0);
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}

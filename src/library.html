@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./library.js"></script>
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <include src="./partials/checkbox_theme.html"></include>
+        <include src="./partials/header_library.html"></include>
+        <include src="./partials/spinner.html"></include>
+        <main>
+          <include src="./partials/movies_container_library.html"></include>
+          <include src="./partials/pagination.html"></include>
+          <include src="./partials/pagination.html"></include>
+        </main>
+      </div>
+      <include src="./partials/footer.html"></include>
+    </div>
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <include src="./partials/modal_movie.html"></include>
+      <include src="./partials/modal_students.html"></include>
+    </div>
+    <include src="./partials/btn-back-to-top.html"></include>
+  </body>
+</html>

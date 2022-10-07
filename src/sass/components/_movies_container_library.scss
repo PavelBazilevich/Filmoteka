@@ -1,0 +1,27 @@
+.plug {
+  display: flex;
+  padding-top: 30px;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.plug-img {
+  width: 130px;
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 350px;
+  }
+}
+
+.plug-text {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+}
